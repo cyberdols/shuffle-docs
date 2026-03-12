@@ -389,7 +389,7 @@ It should look like this: `ExecStart=/opt/tenzir/bin/tenzir-node "--commands=web
 
 3. Save and close the file.
 4. systemctl daemon-reload & systemctl restart tenzir-node
-5. Try to connect to it: `curl http://localhost:5158/api/v0/ping`
+5. Try to connect to it: `curl http://localhost:5160/api/v0/ping`
 
 
 - **Control the Shuffle Tenzir node from Tenzir Cloud**: Go to [Tenzir Cloud](https://app.tenzir.com) and create a node configuration. Download the configuration file, then add the variables found in it to the following environment variables to Orborus: `TENZIR_PLUGINS__PLATFORM__API_KEY=<apikey>`, `TENZIR_PLUGINS__PLATFORM__CONTROL_ENDPOINT=<url>`, `TENZIR_PLUGINS__PLATFORM__TENANT_ID=<tenant>`
